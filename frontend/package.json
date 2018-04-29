@@ -1,0 +1,9 @@
+{
+  "name": "haxe-stack-frontend",
+  "version": "0.0.1",
+  "private": true,
+  "description": "",
+  "dependencies": {
+    "haxe-modular": "^0.7.0"
+  }
+}
