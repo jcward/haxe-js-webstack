@@ -1,7 +1,7 @@
 {
   "name": "haxe-stack-backend",
   "description": "haxe-stack-backend API",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "body-parser": "1.18.2",

@@ -1,0 +1,13 @@
+<style>
+${ TAG_NAME } .header {
+  display:block;
+  background-color:${ Colors.PRIMARY };
+  color:${ (Colors.PRIMARY.clight() > 0.5 ? '#333' : '#eee') };
+  min-height:50px;
+}
+</style>
+
+<$TAG_NAME>
+  <the-header></the-header>
+  <foo-widget each={ item in items } item={ item }></foo-widget>
+</$TAG_NAME>

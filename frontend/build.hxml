@@ -1,0 +1,17 @@
+-cmd mkdir -p .temp
+-cmd mkdir -p bin
+-cmd cp src/index.html bin/
+
+--next
+
+cp.hxml
+
+--macro Split.modules()
+-D closure_disabled
+-D closure_overwrite
+-D uglifyjs_disabled
+-D uglifyjs_overwrite
+
+-main Main
+-js bin/main.js
+

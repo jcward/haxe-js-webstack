@@ -1,0 +1,5 @@
+-cp src
+-cp third_party/haxe-modular/src
+
+# Let's include all widgets, regardless of being statically referenced
+--macro include('widgets')

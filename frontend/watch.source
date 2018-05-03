@@ -1,0 +1,1 @@
+watch.rb 'haxe build.hxml && ./deploy.sh' src

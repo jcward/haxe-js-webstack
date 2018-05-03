@@ -1,0 +1,14 @@
+# Make bin dir and copy config.yaml and boot.js
+-cmd mkdir -p bin/public
+-cmd mkdir -p bin/static
+-cmd cp config.yaml src/boot.js bin
+
+--next
+
+# Build the backend hxapp.js
+-cp src
+-cp externs
+-cp third_party
+
+-main Main.hx
+-js bin/hxapp.js

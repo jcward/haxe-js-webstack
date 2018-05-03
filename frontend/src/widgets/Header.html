@@ -1,0 +1,25 @@
+<style>
+$TAG_NAME {
+  display:block;
+  background-color:${ Colors.PRIMARY };
+  font-weight:bold;
+  a {
+    color:${ (Colors.PRIMARY.clight() > 0.5 ? '#333' : '#eee') };
+    text-decoration:none;
+    display:inline-block;
+    white-space:nowrap;
+    padding:10px;
+    transition: color 0.15s linear;
+    background-color:transparent;
+    &:hover {
+      color:#fff;
+      background-color:rgba(0,0,0,0.1);
+    }
+  }
+}
+</style>
+
+<the-header>
+  <div> <a href="/" onclick={ nav }><i class="fa fa-home"></i> Home</a> <a href="/about" onclick={ nav }><i class="fa fa-info-circle"></i> About</a></div>
+</the-header>
+

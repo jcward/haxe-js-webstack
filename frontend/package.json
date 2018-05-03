@@ -1,9 +1,13 @@
 {
-  "name": "haxe-stack-frontend",
-  "version": "0.0.1",
-  "private": true,
+  "name": "haxe-stack-fe",
+  "version": "0.0.0",
   "description": "",
   "dependencies": {
-    "haxe-modular": "^0.7.0"
+    "haxe-modular": "^0.7.0",
+    "riot-cli": "^4.0.1",
+    "riot-compiler": "^3.4.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0"
   }
 }

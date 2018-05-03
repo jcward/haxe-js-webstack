@@ -35,6 +35,20 @@ if [ ! -f tools/$MONGO_VER/bin/mongod ]; then
 fi
 ADD_PATH=$ADD_PATH:$(pwd)/tools/$MONGO_VER/bin
 
+# Jeff's handy scripts
+if [ ! -f tools/watch.rb ]; then
+  echo "Installing tools/watch.rb"
+  curl -Ls http://onetacoshort.com/temp/watch.rb > tools/watch.rb
+  chmod a+x tools/watch.rb
+fi
+
+# Jeff's handy ff script
+if [ ! -f tools/ff ]; then
+  echo "Installing tools/ff"
+  curl -Ls http://onetacoshort.com/temp/ff > tools/ff
+  chmod a+x tools/ff
+fi
+
 # Precompiled https://github.com/sass/libsass + https://github.com/sass/sassc
 if [ ! -f tools/sassc ]; then
   echo "Installing tools/sassc"

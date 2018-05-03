@@ -1,0 +1,20 @@
+#!/bin/bash
+# In a typical environment, you might want to install Haxe / Neko / etc
+# for the entire computer, or for a user. Here we install it locally
+# for this project only, so runEnv sources the env.source script (which
+# sets up the tools in our PATH, HAXE_STD_PATH, etc) so we can launch
+# the services.
+#
+# For your terminal, you can simply source tools/env.source
+
+if [ $# -eq 0 ]; then
+    echo "Usage: runEnv <PATH> <CMD> [...]"
+    exit 1
+fi
+
+DIR=$1
+cd $PWD/$DIR
+shift
+SCRIPT_DIR=$(dirname -- "$(readlink -f -- "$BASH_SOURCE")")
+source $SCRIPT_DIR/../tools/env.source
+$@

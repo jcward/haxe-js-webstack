@@ -1,0 +1,6 @@
+version: 'local'
+express_port: 8000
+logfile: './local.log'
+mongo:
+    host: localhost
+    port: 27017

@@ -4,3 +4,4 @@ client_secrets*
 tools/*
 */node_modules/*
 frontend/.temp
+npm-debug.log
